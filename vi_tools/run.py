@@ -1,7 +1,7 @@
 ### Module imports ###
 import time
 import argparse
-from utils import EnAnnotator, read_txt
+from utils import VnAnnotator, read_txt
 
 
 ### Global Variables ###
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     parser.add_argument('--mode', type=str, default='', required=True)
     args = parser.parse_args()
 
-    annotator = EnAnnotator()
+    annotator = VnAnnotator()
     text_list = read_txt(text_path)
     output = f'{args.lib}/{args.mode}_{args.lib}_output.txt'
     t = time.time()

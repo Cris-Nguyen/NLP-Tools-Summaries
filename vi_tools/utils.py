@@ -9,7 +9,7 @@ from vncorenlp import VnCoreNLP
 
 
 ### Class declarations ###
-class Annotator:
+class ViAnnotator:
 
     def underthesea_annotate(self, text, mode):
         if mode == 'sent_tokenize':
